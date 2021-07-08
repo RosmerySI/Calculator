@@ -258,15 +258,11 @@ body.dark_theme{
 }
 
 @media screen and (max-width: 576px){
-    #calculator{    
+    
+    .switch-button {
+        display: inline-block;
+        margin-top: 50px;
         margin-left: 30px;
-         display: flex;
-        flex-direction: row;
-        justify-content:space-between;
-        align-content: space-around;
-        flex-wrap: wrap;
-        margin-bottom: 100px;
     }
-  
 
 }
