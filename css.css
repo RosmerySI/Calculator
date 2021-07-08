@@ -264,5 +264,31 @@ body.dark_theme{
         margin-top: 50px;
         margin-left: 30px;
     }
+    #light{
+        background-color: #fafafa;
+        place-items: center;
+        width: 320px;
+        height: 500px;
+        border-radius:20px ;
+        margin: auto;
+    
+    }
+    
+    .purple{
+        background-color: #8e28dc;
+        border-radius: 30px;
+        width: 40px;
+        height: 80px;
+        border-style: none;  
+        position: relative;
+        left: 210px;
+        bottom: 115px;
+        color: white;
+        font-size: 40px;
+        text-align: left;
+        
+    }
+
+
 
 }
