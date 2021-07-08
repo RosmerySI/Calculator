@@ -1,0 +1,68 @@
+<html>
+<header>
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</header>
+
+<body class="">
+
+    <div id="light">
+        <div class="screen">
+        <input type="text" placeholder="0" disabled id="screen-result">
+        </div>
+        <div id="switches" class="switch-button">
+            <!-- Checkbox -->
+            <input type="checkbox" name="switch-button" id="switch_label" class="switch-button__checkbox" >
+            <!-- Botón -->
+            <label for="switch_label" class="switch-button__label"></label>
+            <p class="text" >SWITCH THEME</p>
+        </div>
+        <button id="flecha" class="numbers">↨</button>
+        <form id="calculator">
+            <div>
+                <input type="button" value="C"  class="orange" onclick="clean()">
+                <input type="button" value="("  class="mathSigns" onclick="getData(this)">
+                <input type="button" value=")"  class="mathSigns" onclick="getData(this)">
+                <input type="button" value="*" class="operations" onclick="getData(this)">
+            </div>
+            <div>
+                <input type="button" value="√"  class="mathSigns" onclick="getData(this)">
+                <input type="button" value="%"  class="mathSigns" onclick="getData(this)">
+                <input type="button" value="±"  class="mathSigns" onclick="getData(this)">
+                <input type="button" value="/" class="operations" onclick="getData(this)">
+            </div>
+            <div>
+                <input type="button" value="7"  class="numbers" onclick="getData(this)">
+                <input type="button" value="8"  class="numbers" onclick="getData(this)">
+                <input type="button" value="9"  class="numbers" onclick="getData(this)">
+                <input type="button" value="-" class="operations" onclick="getData(this)">
+            </div>
+            <div>
+                <input type="button" value="4"  class="numbers" onclick="getData(this)">
+                <input type="button" value="5"  class="numbers" onclick="getData(this)">
+                <input type="button" value="6"  class="numbers" onclick="getData(this)">    
+                <input type="button" value="+"  class="operations" onclick="getData(this)">
+            </div>
+            <div>
+                <input type="button" value="1"  class="numbers" onclick="getData(this)">
+                <input type="button" value="2"  class="numbers" onclick="getData(this)">
+                <input type="button" value="3"  class="numbers" onclick="getData(this)">
+
+            </div>
+            <div>
+                <input type="button" value="."  class="numbers" onclick="getData(this)">
+                <input type="button" value="0"  class="numbers" onclick="getData(this)">
+                <input type="button" value="⌂"  class="numbers" onclick="getData(this)">
+                <div><input type="button" value="="  class="purple" onclick="calculate()"></div>
+            </div>
+            
+
+        </form>
+
+     <script src="calculator.js"></script>
+    
+    
+</body>
+
+</html>
