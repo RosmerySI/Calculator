@@ -36,7 +36,7 @@ body{
 
 }
 .screen{
-    padding-top: 70px;
+    padding-top: 50px;
 
 
 }
@@ -179,9 +179,9 @@ body{
 
 #gif{
 
-    width: 150px;
-    height: 150px;
-    margin-top: 50px;
+    width: 120px;
+    height: 120px;
+ 
     margin-left: 100px;
 }
 
