@@ -9,7 +9,9 @@
 
     <div id="light">
         <div class="screen">
-        <input type="text" placeholder="0" disabled id="screen-result">
+         <img id="gif" src="gifanimado.gif" class="hide">
+        <input type="text" name="screen-result" placeholder="0" disabled id="screen-result" >
+        
         </div>
         <div id="switches" class="switch-button">
             <!-- Checkbox -->
@@ -27,7 +29,7 @@
                 <input type="button" value="*" class="operations" onclick="getData(this)">
             </div>
             <div>
-                <input type="button" value="√"  class="mathSigns" onclick="getData(this)">
+                <input type="button" value="√"  class="mathSigns" onclick="sqrt()">
                 <input type="button" value="%"  class="mathSigns" onclick="getData(this)">
                 <input type="button" value="±"  class="mathSigns" onclick="getData(this)">
                 <input type="button" value="/" class="operations" onclick="getData(this)">

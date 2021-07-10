@@ -163,7 +163,13 @@ body{
 }
 
 
+#gif{
 
+    width: 150px;
+    height: 150px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
 
 
 
@@ -282,6 +288,12 @@ body.dark_theme{
      
      }
      
-    
+     #gif{
+
+        width: 200px;
+        height: 200px;
+        margin-top: 50px;
+        margin-left: 100px;
+    }
 
 }
