@@ -9,22 +9,36 @@ body{
     height: 700px;
     border-radius:20px ;
     margin: auto;
+    
 
 }
 #screen-result{
     background-color: #fafafa;
     font-size: 50px;
     text-align: end;
-    margin-top: 100px;
+    margin-top: 0px;
     width: 250px;
     border-style: none;
     color: #8598a5;
     margin-left: 40px;
     
 }
-#result{
-    height: 100px;
-    width:320;
+#secondscreen{
+    
+    background-color: #fafafa;
+    font-size: 30px;
+    text-align: end;
+    width: 250px;
+    border-style: none;
+    color: #8598a5;
+    margin-left: 40px;
+
+
+}
+.screen{
+    padding-top: 70px;
+
+
 }
 
 
@@ -36,7 +50,7 @@ body{
 }
 .switch-button {
     display: inline-block;
-    margin-top: 100px;
+    margin-top: 70px;
     margin-left: 30px;
 }
 .switch-button .switch-button__checkbox {
@@ -303,7 +317,7 @@ body.dark_theme{
         border-style: none;  
         position: absolute;
         left: 330px;
-        bottom: 110px;
+        bottom: 50px;
         color: white;
         font-size: 40px;
         text-align: center;

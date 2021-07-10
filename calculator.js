@@ -1,5 +1,6 @@
 let screen = document.getElementById('screen-result');
-
+let gif= document.getElementById("gif")
+let secondscreen= document.getElementById("secondscreen");
 function getData(ref){
 
     let value = ref.value;    
@@ -8,38 +9,79 @@ function getData(ref){
 
 function clean(){
     screen.value = '';
+	secondscreen.className = "hide";
+	gif.className="hide"
+	screen.className="";
+	
+	
    
 }
 
 function calculate(){
-    try {
-        let prueba = eval(screen.value);
-		if(isNaN(prueba)){
-			let gif= document.getElementById("gif")
+	try {
+		let test = eval(screen.value);
+		if(isNaN(test)){
+			screen.className="hide";       
+			   gif.className="show"	
 		}else{
-			screen.value = eval(screen.value);
+			secondscreen.className = "show";
+			secondscreen.value = screen.value;
+			screen.value = test;
 		}		
 		
-    } catch (error) {
-	   screen.className="hide";
-       let gif= document.getElementById("gif")
-	   gif.className="show"
-        setTimeout(() => {
-        clean();
-        }, 100);
-		
-    }
-
+	} catch (error) {
+	   screen.className="hide";       
+	   gif.className="show"	
+	}	
 }
 
 function sqrt(){
     
-    screen.value = Math.sqrt(screen.value);
-
+    try {
+        let test = Math.sqrt(screen.value);
+		if(isNaN(test)){
+			screen.className="hide";       
+	   		gif.className="show"
+		}else{
+			screen.value = test.toFixed(4);
+		}		
+		
+    } catch (error) {
+	   screen.className="hide";       
+	   gif.className="show"		
+    }
 }
 
 function percent(){
-	screen.value=  (screen.value)
+	try {
+        let test = screen.value/100 ;
+		if(isNaN(test)){
+			screen.className="hide";       
+	   		gif.className="show"
+		}else{
+			screen.value = test;
+		}		
+		
+    } catch (error) {
+	   screen.className="hide";       
+	   gif.className="show"		
+    }	
+}
+
+function plusminus(){
+	try {
+        let test = -(screen.value);
+		if(isNaN(test)){
+			screen.className="hide";       
+	   		gif.className="show"
+		}else{
+			screen.value = test;
+		}		
+		
+    } catch (error) {
+	   screen.className="hide";       
+	   gif.className="show"		
+    }	
 }
 
 let buttonChange = document.getElementById('switch_label');
