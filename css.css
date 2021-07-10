@@ -295,5 +295,18 @@ body.dark_theme{
         margin-top: 50px;
         margin-left: 100px;
     }
+    .purple{
+        background-color: #8e28dc;
+        border-radius: 50px;
+        width: 50px;
+        height: 105px;
+        border-style: none;  
+        position: absolute;
+        left: 330px;
+        bottom: 110px;
+        color: white;
+        font-size: 40px;
+        text-align: center;
+    }
 
 }
