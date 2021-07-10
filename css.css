@@ -322,5 +322,33 @@ body.dark_theme{
         font-size: 40px;
         text-align: center;
     }
-
+    #screen-result{
+        background-color: #fafafa;
+        font-size: 50px;
+        text-align: end;
+        margin-top: 0px;
+        width: 250px;
+        border-style: none;
+        color: #8598a5;
+        margin-left: 40px;
+        
+    }
+    #secondscreen{
+        
+        background-color: #fafafa;
+        font-size: 30px;
+        text-align: end;
+        width: 250px;
+        border-style: none;
+        color: #8598a5;
+        margin-left: 40px;
+    
+    
+    }
+    .screen{
+        padding-top: 50px;
+    
+    
+    }
+    
 }
