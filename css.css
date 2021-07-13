@@ -22,7 +22,7 @@ body{
     height: 700px;
     border-radius:20px ;
     margin: auto;
-    animation: cascade 4s ;
+    animation: cascade 3s ;
     animation-direction:normal;
 
 }
@@ -324,43 +324,38 @@ body.dark_theme{
         margin-top: 0px;
         margin-left: 30px;
     }
-    #screen-result{
-        background-color: #fafafa;
-        font-size: 50px;
-        text-align: end;
-        margin-top: 100px;
-        width: 250px;
-        border-style: none;
-        color: #515d66;
-        margin-left: 40px;
-        
-    }
+   
     
     .dark_theme #screen-result{
         background-color: #3e4343 ;
-        color: #d2e4f0;
+        color: #cadeee;
+     
+     }
+     .dark_theme #secondscreen{
+        background-color: #3e4343 ;
+        color: #cadeee;
      
      }
      
      #gif{
 
-        width: 120px;
-        height: 120px;
-        margin-left: 50px;
+        width: 150px;
+        height: 160px;
+        margin-left: 90px;
         margin-bottom: 50px;
     }
     .purple{
         background-color: #8e28dc;
         border-radius: 50px;
-        width: 50px;
+        width: 40px;
         height: 100px;
         border-style: none;  
         position: relative;
         left: 210px;
         bottom: 115px;
         color: white;
-        font-size: 40px;
-        text-align: left;
+        font-size: 20px;
+        text-align: center;
     }
     #screen-result{
         background-color: #fafafa;
@@ -373,18 +368,7 @@ body.dark_theme{
         margin-left: 40px;
         
     }
-    #secondscreen{
-        
-        background-color: #fafafa;
-        font-size: 30px;
-        text-align: end;
-        width: 250px;
-        border-style: none;
-        color: #333a3f;
-        margin-left: 40px;
-    
-    
-    }
+   
    .buttons{
        margin-top: 40px;
    } 
