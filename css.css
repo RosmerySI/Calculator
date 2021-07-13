@@ -65,6 +65,7 @@ body{
 
 }
 .screen{
+    padding-top: 50px;
     width: 300px;
     height: 150px;
 
@@ -77,9 +78,9 @@ body{
 
 .switch-button {
     display: inline-block;
-    
     margin-left: 30px;
 }
+
 .switch-button .switch-button__checkbox {
     display: none;
 }
@@ -207,18 +208,16 @@ body{
 #gif{
 
     width: 150px;
-    height: 200px;
- 
+    height: 150px;
+    
     margin-left: 100px;
 }
 
 
-
-.switch-button {
-    display: inline-block;
-    margin-top: 100px;
-    margin-left: 30px;
+.buttons{
+    margin-top: 60px;
 }
+
 body.dark_theme{
 
    background-color: var(--color-dark);
@@ -322,7 +321,7 @@ body.dark_theme{
     
     .switch-button {
         display: inline-block;
-        margin-top: 50px;
+        margin-top: 0px;
         margin-left: 30px;
     }
     #screen-result{
@@ -345,10 +344,10 @@ body.dark_theme{
      
      #gif{
 
-        width: 200px;
-        height: 200px;
-       
-        margin-left: 70px;
+        width: 120px;
+        height: 120px;
+        margin-left: 50px;
+        margin-bottom: 50px;
     }
     .purple{
         background-color: #8e28dc;
@@ -386,6 +385,10 @@ body.dark_theme{
     
     
     }
-    
-    
+   .buttons{
+       margin-top: 40px;
+   } 
+     .screen{
+         padding-top: 50px;
+     }
 }

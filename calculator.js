@@ -30,7 +30,8 @@ function calculate(){
 		}		
 		
 	} catch (error) {
-	   screen.className="hide";       
+	   screen.className="hide"; 
+	   secondscreen.className="hide";      
 	   gif.className="show"	
 	}	
 }
