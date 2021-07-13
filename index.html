@@ -9,63 +9,64 @@
 
     <div id="light">
         <div class="screen">
-         <img id="gif" src="gifanimado.gif" class="hide">
-        <input type="text" name="secondscreen"  placeholder="0" disabled id="secondscreen" class="hide" >
-        <input type="text" name="screen-result" placeholder="0" disabled id="screen-result" >
-        
+            <img id="gif" src="gifanimado.gif" class="hide">
+            <div ><input type="text" name="secondscreen" disabled id="secondscreen" class="hide"></div>
+            <input type="text" name="screen-result" disabled placeholder="0" id="screen-result">
+
         </div>
-        <div id="switches" class="switch-button">
-            <!-- Checkbox -->
-            <input type="checkbox" name="switch-button" id="switch_label" class="switch-button__checkbox" >
-            <!-- Botón -->
-            <label for="switch_label" class="switch-button__label"></label>
-            <p class="text" >SWITCH THEME</p>
+        <div class="buttons">
+            <div id="switches" class="switch-button">
+                <!-- Checkbox -->
+                <input type="checkbox" name="switch-button" id="switch_label" class="switch-button__checkbox">
+                <!-- Botón -->
+                <label for="switch_label" class="switch-button__label"></label>
+                <p class="text">SWITCH THEME</p>
+            </div>
+            <button id="flecha" class="numbers">↨</button>
+            <form id="calculator">
+                <div>
+                    <input type="button" value="C" class="orange" onclick="clean()">
+                    <input type="button" value="(" class="mathSigns" onclick="getData(this)">
+                    <input type="button" value=")" class="mathSigns" onclick="getData(this)">
+                    <input type="button" value="*" class="operations" onclick="getData(this)">
+                </div>
+                <div>
+                    <input type="button" value="√" class="mathSigns" onclick="sqrt()">
+                    <input type="button" value="%" class="mathSigns" onclick="percent()">
+                    <input type="button" value="±" class="mathSigns" onclick="plusminus()">
+                    <input type="button" value="/" class="operations" onclick="getData(this)">
+                </div>
+                <div>
+                    <input type="button" value="7" class="numbers" onclick="getData(this)">
+                    <input type="button" value="8" class="numbers" onclick="getData(this)">
+                    <input type="button" value="9" class="numbers" onclick="getData(this)">
+                    <input type="button" value="-" class="operations" onclick="getData(this)">
+                </div>
+                <div>
+                    <input type="button" value="4" class="numbers" onclick="getData(this)">
+                    <input type="button" value="5" class="numbers" onclick="getData(this)">
+                    <input type="button" value="6" class="numbers" onclick="getData(this)">
+                    <input type="button" value="+" class="operations" onclick="getData(this)">
+                </div>
+                <div>
+                    <input type="button" value="1" class="numbers" onclick="getData(this)">
+                    <input type="button" value="2" class="numbers" onclick="getData(this)">
+                    <input type="button" value="3" class="numbers" onclick="getData(this)">
+
+                </div>
+                <div>
+                    <input type="button" value="." class="numbers" onclick="getData(this)">
+                    <input type="button" value="0" class="numbers" onclick="getData(this)">
+                    <input type="button" value="   " class="numbers" onclick="getData(this)">
+                    <div><input type="button" value="=" class="purple" onclick="calculate()"></div>
+                </div>
+
+
+            </form>
         </div>
-        <button id="flecha" class="numbers">↨</button>
-        <form id="calculator">
-            <div>
-                <input type="button" value="C"  class="orange" onclick="clean()">
-                <input type="button" value="("  class="mathSigns" onclick="getData(this)">
-                <input type="button" value=")"  class="mathSigns" onclick="getData(this)">
-                <input type="button" value="*" class="operations" onclick="getData(this)">
-            </div>
-            <div>
-                <input type="button" value="√"  class="mathSigns" onclick="sqrt()">
-                <input type="button" value="%"  class="mathSigns" onclick="percent()">
-                <input type="button" value="±"  class="mathSigns" onclick="plusminus()">
-                <input type="button" value="/" class="operations" onclick="getData(this)">
-            </div>
-            <div>
-                <input type="button" value="7"  class="numbers" onclick="getData(this)">
-                <input type="button" value="8"  class="numbers" onclick="getData(this)">
-                <input type="button" value="9"  class="numbers" onclick="getData(this)">
-                <input type="button" value="-" class="operations" onclick="getData(this)">
-            </div>
-            <div>
-                <input type="button" value="4"  class="numbers" onclick="getData(this)">
-                <input type="button" value="5"  class="numbers" onclick="getData(this)">
-                <input type="button" value="6"  class="numbers" onclick="getData(this)">    
-                <input type="button" value="+"  class="operations" onclick="getData(this)">
-            </div>
-            <div>
-                <input type="button" value="1"  class="numbers" onclick="getData(this)">
-                <input type="button" value="2"  class="numbers" onclick="getData(this)">
-                <input type="button" value="3"  class="numbers" onclick="getData(this)">
+        <script src="calculator.js"></script>
 
-            </div>
-            <div>
-                <input type="button" value="."  class="numbers" onclick="getData(this)">
-                <input type="button" value="0"  class="numbers" onclick="getData(this)">
-                <input type="button" value="⌂"  class="numbers" onclick="getData(this)">
-                <div><input type="button" value="="  class="purple" onclick="calculate()"></div>
-            </div>
-            
 
-        </form>
-
-     <script src="calculator.js"></script>
-    
-    
 </body>
 
 </html>

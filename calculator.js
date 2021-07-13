@@ -1,4 +1,4 @@
-let screen = document.getElementById('screen-result');
+let screen = document.getElementById("screen-result");
 let gif= document.getElementById("gif")
 let secondscreen= document.getElementById("secondscreen");
 function getData(ref){

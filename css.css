@@ -1,26 +1,53 @@
-body{
-    background-color:#BBC3C9;
+:root {
+    --color-dark: #000;
+    --color-light: #BBC3C9;
+    --color-button: #fdffff;
+    --color-gray: #BBC3C9;
+    --color-text: #7f8186;
+    --color-father: #fafafa;
+    --color-darkLight: #3e4343;
+    --color-mathSigns: #4b433b;
     
 }
+body{
+    background-color: var(--color-light);
+    
+}
+
+
 #light{
-    background-color: #fafafa;
+    background-color: var(--color-father);
     place-items: center;
     width: 320px;
     height: 700px;
     border-radius:20px ;
     margin: auto;
-    
+    animation: cascade 4s ;
+    animation-direction:normal;
 
 }
+@keyframes cascade {
+    0% {
+      transform: translatey(-700px);    
+      opacity: 0;
+    }
+    
+    100% {
+      transform: translatey(0x);
+      opacity: 1;
+    }
+  }
 #screen-result{
-    background-color: #fafafa;
+    background-color: var(--color-father);
     font-size: 50px;
     text-align: end;
     margin-top: 0px;
     width: 250px;
+    height: 150px;
     border-style: none;
     color: #8598a5;
     margin-left: 40px;
+    
     
 }
 #secondscreen{
@@ -32,25 +59,25 @@ body{
     border-style: none;
     color: #8598a5;
     margin-left: 40px;
+    position: relative;
+    top: 50px;
 
 
 }
 .screen{
-    padding-top: 50px;
+    width: 300px;
+    height: 150px;
 
 
 }
 
 
-:root {
-    --color-dark: #000;
-    --color-light: #BBC3C9;
-    --color-button: #fdffff;
-    --color-gray: #BBC3C9;
-}
+
+
+
 .switch-button {
     display: inline-block;
-    margin-top: 70px;
+    
     margin-left: 30px;
 }
 .switch-button .switch-button__checkbox {
@@ -82,7 +109,7 @@ body{
     transform: translateX(1.5rem);
 }
 .text{
-    color: #7f8186;
+    color: var(--color-text);
     font-size: 10px;
     color: #c2c3c5;
     position: relative;
@@ -179,8 +206,8 @@ body{
 
 #gif{
 
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 200px;
  
     margin-left: 100px;
 }
@@ -194,13 +221,13 @@ body{
 }
 body.dark_theme{
 
-   background-color: #000;
+   background-color: var(--color-dark);
 
 
 }
 
 .dark_theme #light{
-    background-color: #3e4343;
+    background-color: var(--color-darkLight) ;
     place-items: center;
     width: 320px;
     height: 700px;
@@ -219,7 +246,7 @@ body.dark_theme{
 }
 
 .dark_theme .mathsigns{
-    background-color: #4b433b;
+    background-color: var(--color-mathSigns) ;
     border-radius: 100px;
     width: 55px;
     height: 50px;
@@ -313,11 +340,11 @@ body.dark_theme{
         background-color: #8e28dc;
         border-radius: 50px;
         width: 50px;
-        height: 105px;
+        height: 100px;
         border-style: none;  
-        position: absolute;
-        left: 330px;
-        bottom: 50px;
+        position: relative;
+        left: 210px;
+        bottom: 115px;
         color: white;
         font-size: 40px;
         text-align: center;
