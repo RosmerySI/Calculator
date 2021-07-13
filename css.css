@@ -347,8 +347,8 @@ body.dark_theme{
 
         width: 200px;
         height: 200px;
-        margin-top: 50px;
-        margin-left: 100px;
+       
+        margin-left: 70px;
     }
     .purple{
         background-color: #8e28dc;
@@ -361,7 +361,7 @@ body.dark_theme{
         bottom: 115px;
         color: white;
         font-size: 40px;
-        text-align: center;
+        text-align: left;
     }
     #screen-result{
         background-color: #fafafa;
@@ -381,15 +381,11 @@ body.dark_theme{
         text-align: end;
         width: 250px;
         border-style: none;
-        color: #8598a5;
+        color: #333a3f;
         margin-left: 40px;
     
     
     }
-    .screen{
-        padding-top: 50px;
     
-    
-    }
     
 }
