@@ -303,6 +303,20 @@ body.dark_theme{
    color: #8598a5;
 
 }
+.dark_theme #secondscreen{
+    
+    background-color: #3e4343;
+    font-size: 30px;
+    text-align: end;
+    width: 250px;
+    border-style: none;
+    color: #8598a5;
+    margin-left: 40px;
+    position: relative;
+    top: 50px;
+
+
+}
 
 @media screen and (max-width: 576px){
     
