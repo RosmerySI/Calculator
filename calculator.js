@@ -1,6 +1,7 @@
 let screen = document.getElementById("screen-result");
-let gif= document.getElementById("gif")
-let secondscreen= document.getElementById("secondscreen");
+let gif = document.getElementById("gif")
+let secondscreen = document.getElementById("secondscreen");
+
 function getData(ref){
 
     let value = ref.value;    
@@ -84,6 +85,13 @@ function plusminus(){
 	   gif.className="show"		
     }	
 }
+
+function retro(){ 
+	     let back = screen.value;
+         long = back.length;     
+         back = back.substr(0,long-1)      
+         screen.value = back; 
+         }
 
 let buttonChange = document.getElementById('switch_label');
 

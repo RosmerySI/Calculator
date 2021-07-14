@@ -23,7 +23,7 @@
                 <p class="text">SWITCH THEME</p>
             </div>
             <button id="flecha" class="numbers">↨</button>
-            <form id="calculator">
+            <form id="calculator" >
                 <div>
                     <input type="button" value="C" class="orange" onclick="clean()">
                     <input type="button" value="(" class="mathSigns" onclick="getData(this)">
@@ -57,7 +57,7 @@
                 <div>
                     <input type="button" value="." class="numbers" onclick="getData(this)">
                     <input type="button" value="0" class="numbers" onclick="getData(this)">
-                    <input type="button" value="   " class="numbers" onclick="getData(this)">
+                    <input type="button" value="⌂" id="erase" class="numbers" onclick="retro(this)">
                     <div><input type="button" value="=" class="purple" onclick="calculate()"></div>
                 </div>
 

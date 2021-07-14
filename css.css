@@ -7,6 +7,9 @@
     --color-father: #fafafa;
     --color-darkLight: #3e4343;
     --color-mathSigns: #4b433b;
+    --color-textScreen: #8598a5;
+    --color-orange: #fcb82d;
+    --color-textSigns: #f5f0e4;
     
 }
 body{
@@ -37,6 +40,37 @@ body{
       opacity: 1;
     }
   }
+
+.orange:hover{
+      transform: scale(1.1);
+
+
+  }
+.mathSigns:hover{
+    transform: scale(1.1);
+
+
+}
+.numbers:hover{
+    transform: scale(1.1);
+
+
+}
+.operations:hover{
+    transform: scale(1.1);
+
+
+}
+.purple:hover{
+    transform: scale(1.1 , 1.1);
+
+
+}
+.switch-button:hover{
+    transform: scale(1.1);
+
+
+}
 #screen-result{
     background-color: var(--color-father);
     font-size: 50px;
@@ -45,19 +79,19 @@ body{
     width: 250px;
     height: 150px;
     border-style: none;
-    color: #8598a5;
+    color: var(--color-textScreen);
     margin-left: 40px;
     
     
 }
 #secondscreen{
     
-    background-color: #fafafa;
+    background-color: var(--color-father);
     font-size: 30px;
     text-align: end;
     width: 250px;
     border-style: none;
-    color: #8598a5;
+    color: var(--color-textScreen);
     margin-left: 40px;
     position: relative;
     top: 50px;
@@ -123,7 +157,7 @@ body{
     position: relative;
     left: 125px;
     bottom: 25px;
-    color: #7f8186;
+    color: var(--color-text) ;
 }
 #calculator{    
     margin-left: 30px;
@@ -134,7 +168,7 @@ body{
     flex-wrap: wrap;
 }
 .orange{
-    background-color: #fcb82d;
+    background-color: var(--color-orange);
     border-radius: 100px;
     width: 55px;
     height: 50px;
@@ -147,7 +181,7 @@ body{
 }
 
 .mathSigns{
-    background-color: #f5f0e4;
+    background-color:var(--color-textSigns) ;
     border-radius: 100px;
     width: 55px;
     height: 50px;
@@ -316,6 +350,11 @@ body.dark_theme{
 
 
 }
+#erase{
+  transform: rotate(-90deg);
+
+
+}
 
 @media screen and (max-width: 576px){
     
@@ -347,7 +386,7 @@ body.dark_theme{
     .purple{
         background-color: #8e28dc;
         border-radius: 50px;
-        width: 45px;
+        width: 50px;
         height: 100px;
         border-style: none;  
         position: relative;
@@ -378,4 +417,5 @@ body.dark_theme{
      .screen{
          padding-top: 50px;
      }
+    
 }
